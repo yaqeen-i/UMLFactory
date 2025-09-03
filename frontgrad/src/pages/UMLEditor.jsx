@@ -1613,10 +1613,7 @@ const UmlEditor = forwardRef(({ projectId, initialModel, permission }, ref) => {
       if (isPointInName(obj, mx, my, ctx)) {
         showModal('Edit Name', obj.name, val => {
           if (val) {
-            if (!isValidElementName(val)) {
-              alert('Class name must not be empty, only numbers, or contain spaces.');
-              return;
-            }
+            
             setClasses(prev => prev.map(c => c.id === obj.id ? { ...c, name: val } : c));
             sendUmlAction({
               type: 'update',
@@ -1633,10 +1630,6 @@ const UmlEditor = forwardRef(({ projectId, initialModel, permission }, ref) => {
         if (mx >= obj.x + obj.width - 30 && mx <= obj.x + obj.width - 6 && my >= obj.y + 10 && my <= obj.y + 34) {
           showModal('Edit Class Name', obj.name, val => {
             if (val) {
-              if (!isValidElementName(val)) {
-                alert('Class name must not be empty, only numbers, or contain spaces.');
-                return;
-              }
               setClasses(prev => prev.map(c => c.id === obj.id ? { ...c, name: val } : c));
               sendUmlAction({
                 type: 'update',
