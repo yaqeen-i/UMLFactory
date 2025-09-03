@@ -1,6 +1,6 @@
 package com.uml.tool.repository;
 
-import com.uml.tool.DTO.UserLoginDTO;
+//import com.uml.tool.DTO.UserLoginDTO;
 import com.uml.tool.model.UserLoginDetails;
 import org.springframework.data.jpa.repository.JpaRepository;
 

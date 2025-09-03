@@ -2,12 +2,12 @@ package com.uml.tool.controller;
 
 import com.uml.tool.constants.UserRoles;
 import com.uml.tool.model.UserLoginDetails;
-import com.uml.tool.DTO.UserLoginDTO;
+//import com.uml.tool.DTO.UserLoginDTO;
 import com.uml.tool.repository.UserLoginDetailsRepository;
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+//import jakarta.validation.constraints.Email;
+//import jakarta.validation.constraints.NotBlank;
+//import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.http.*;

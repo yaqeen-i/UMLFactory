@@ -3,9 +3,9 @@ package com.uml.tool.controller;
 import com.uml.tool.DTO.ProjectCreateDTO;
 import com.uml.tool.DTO.ProjectDTO;
 import com.uml.tool.model.Project;
-import com.uml.tool.model.UserLoginDetails;
+//import com.uml.tool.model.UserLoginDetails;
 import com.uml.tool.service.ProjectService;
-import com.uml.tool.service.UserService;
+//import com.uml.tool.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +23,7 @@ public class ProjectController {
     @Autowired
     private ProjectService projectService;
     @Autowired
-    private UserService userService;
+    //private UserService userService;
 
     @PostMapping("/create")
     public ResponseEntity<?> createProject(@Valid @RequestBody ProjectCreateDTO dto) {

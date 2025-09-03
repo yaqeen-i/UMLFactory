@@ -3,10 +3,10 @@ package com.uml.tool.service;
 import com.uml.tool.constants.UserRoles;
 import com.uml.tool.model.UserLoginDetails;
 import com.uml.tool.model.Project;
-import com.uml.tool.model.Group;
+//import com.uml.tool.model.Group;
 import com.uml.tool.repository.UserRepository;
 import com.uml.tool.repository.ProjectRepository;
-import com.uml.tool.repository.GroupRepository;
+//import com.uml.tool.repository.GroupRepository;
 import com.uml.tool.repository.GroupMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -26,8 +26,8 @@ public class AdminService {
     private PasswordEncoder passwordEncoder;
     @Autowired
     private ProjectRepository projectRepository;
-    @Autowired
-    private GroupRepository groupRepository;
+    //@Autowired
+    //private GroupRepository groupRepository;
     @Autowired
     private GroupMemberRepository groupMemberRepository;
     @Autowired

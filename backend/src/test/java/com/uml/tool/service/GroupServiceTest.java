@@ -221,8 +221,8 @@ class GroupServiceTest {
         user.setEmail("user@example.com");
         when(groupRepository.findById(1L)).thenReturn(Optional.of(group));
         when(userRepository.findByEmail("user@example.com")).thenReturn(Optional.of(user));
-        GroupMember.Permission perm = GroupMember.Permission.EDIT;
-        GroupMember member = GroupMember.builder().group(group).user(user).permission(perm).build();
+        //GroupMember.Permission perm = GroupMember.Permission.EDIT;
+        //GroupMember member = GroupMember.builder().group(group).user(user).permission(perm).build();
         // No need to mock save, just verify
         GroupMember result = groupService.addMemberToGroup(1L, "user@example.com", "EDIT");
         assertEquals(user, result.getUser());
