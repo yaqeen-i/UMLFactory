@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 public class ProjectController {
     @Autowired
     private ProjectService projectService;
-    @Autowired
+//    @Autowired
     //private UserService userService;
 
     @PostMapping("/create")

@@ -3,6 +3,10 @@ FROM node:20-alpine AS build
 WORKDIR /app
 
 COPY package.json package-lock.json ./
+
+# Fix for Apple Silicon/Vite: Install the specific Linux ARM64 binary
+RUN npm install @rollup/rollup-linux-arm64-musl
+
 RUN npm install
 COPY . .
 
